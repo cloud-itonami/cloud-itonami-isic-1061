@@ -558,7 +558,7 @@
 
      "  <section class=\"card\">\n"
      "    <h2>What this sample does not show</h2>\n"
-     "    <p class=\"muted\">Stated so the page is not read as claiming more than it is: <code>millops.advisor</code> is still a skeleton, so no LLM ran — the proposals above are fixtures and only the Governor's verdicts on them are computed. <code>millops.sim</code> (<code>clojure -M:dev:run</code>) is still a stub, so this file seeds its own batches rather than reading a shared demo fixture. <code>millops.store</code> models batches and the ledger only: maintenance and shipment produce audit facts, not stored documents.</p>\n"
+     "    <p class=\"muted\">Stated so the page is not read as claiming more than it is: <code>millops.advisor</code> is still a skeleton, so no LLM ran — the proposals above are fixtures and only the Governor's verdicts on them are computed. <code>millops.sim</code> (<code>clojure -M:dev:run</code>) is still a stub, so this file seeds its own batches rather than reading a shared demo fixture. <code>millops.store</code> models batches and the ledger only: maintenance and shipment produce audit facts, not stored documents. And <code>millops.operation</code> has no commit path of its own — every <code>:governor-hold</code> row above is a fact the real actor stack built, but the <code>:committed</code> / <code>:approval-granted</code> / <code>:approval-denied</code> rows (and therefore the operator name on them) are written by this generator's driver, which is the only place in this repo where an approver is recorded at all.</p>\n"
      "  </section>\n"
 
      "</main>\n"
