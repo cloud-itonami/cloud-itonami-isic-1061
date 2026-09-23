@@ -1,5 +1,5 @@
 (ns millops.facts-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [millops.facts :as facts]))
 
 ;; ──────────────────────── Product Type Lookups ──────────────────────
